@@ -1,0 +1,22 @@
+Name: Viraj Patel
+ID: 200801069
+College: DA-IICT, Gandhinagar
+
+I have also Included comments in the Code files which can be useful to understand the logic.
+
+Problem 1:
+
+The logic for this is bit tricky. Basic idea is to PUSH elements starting from zero to first number in the sequence.
+
+If the second number in sequence is greater than maximum number that has been PUSHed so far then PUSH numbers from
+maximum number to second number in sequence. Then POP the stack and we get second element of the sequence.
+
+If it's less than previous element then directly POP and check if POPed number is same as current element. If they are
+not same then Pattern is not achievable. Otherwise move on to next element in the sequence.
+
+If the currently processed number is '9', which is maximum number of the sequence then empty the stack and after each POP operation check if the Pattern is achievable or not.
+
+
+Problem 2:
+
+For this one, I have used straight and simple logic. I have created circular linked list and then start moving from first kid to next kid while keeping the count for N. Eleminate kids and at last Only 1 kid will be the winner.
